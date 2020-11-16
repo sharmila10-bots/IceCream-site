@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Register</title>
+<script language="javascript" type="text/javascript"></script>
+<style>
+body{
+background-image:url(back1.jpg);
+background-repeat:no-repeat;
+background-size:cover;
+}
+div{
+padding:25px 25px;
+border:5px solid #FF00FF;
+margin:150px 380px;
+position:center;
+text-align:center;
+}
+#submit{
+border-radius:1px;
+margin:40px;
+padding:10px;
+cursor:pointer;
+}
+#username{
+margin:20px;
+padding:10px;
+}
+#password1{
+margin:25px;
+padding:10px;
+}
+#password2{
+margin:25px;
+padding:10px;
+}
+</style>
+</head>
+
+<body>
+<div class="Register-css">
+<h2>Register</h2>
+<form>
+<label>Enter your username:</label>
+<input id="username" name="username" type="text"/><br/>
+<label> Enter your password:</label>
+<input id="password1" name="password" type="password"/><br/>
+<label> Reenter your password:</label>
+<input id="password2" name="password" type="password"/>
+<input id="submit" type="button" value="Register" onclick="validate()"/>
+</form></div>
+<script>
+function validate(){
+	var p1 = document.getElementById("password1").value;
+	var p2 = document.getElementById("password2").value;
+	if(p1 == p2)
+	{
+		alert("Registered Successfully !!");
+	}
+	else
+	{
+		alert("Renter password");
+	}
+}
+</script>
+
+</body>
+</html>
